@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости автомобиля</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <form method="#" action="#" class="" name="car_price">
+        <h2 class="form_tittle">Расчет стоимости автомобиля</h2>
+        <p>* - чтобы получить более точную оценку, заполните все поля</p>
+        <select name="car_mark">
+            <option>*Выберете марку</option>
+            <option value="renault">Renault</option>
+            <option value="opel">Opel</option>
+            <option value="mazda">Mazda</option>
+            <option value="jaguar">Jaguar</option>
+        </select>
+        <div class="model" id="model"></div>
+
+        <fieldset class="part_total">
+            <p>*Выберите вид топлива</p>
+            <label for="petrol">
+                <input type="radio" name="toplivo" value="20000" id="petrol">
+                Бензин
+            </label>
+
+            <label for="disel">
+                <input type="radio" name="toplivo" value="50000" id="disel">
+                Дизель
+            </label>
+
+            <label for="gas">
+                <input type="radio" name="toplivo" value="40000" id="gas">
+                Газ
+            </label>
+
+            <label for="electricity">
+                <input type="radio" name="toplivo" value="100000" id="electricity">
+                Электричество
+            </label>
+        </fieldset>
+
+        <fieldset class="part_total">
+            <p>*Введите объем двигателя</p>
+            <input type="number" id="engine" placeholder="от 1.1 до 3.5">
+        </fieldset>
+
+        <fieldset class="part_total">
+            <p>*Выберете состояние автомобиля</p>
+            <label for="new_car">
+                <input type="checkbox" value="300000" name="new" id="new_car" onchange="check(this)">
+                Новый
+            </label>
+
+            <label for="old_car">
+                <input type="checkbox" value="50000" name="old" id="old_car" onchange="check(this)">
+                Подержаный
+            </label>
+
+            <div class="owners">
+                <p>*Количество влыдельцев</p>
+                <label for="one_two">
+                    <input type="radio" name="vladelci" id="one_two" value="200000">
+                    1-2
+                </label>
+                <label for="more_two">
+                    <input type="radio" name="vladelci" id="more_two" value="50000">
+                    более 3-ех
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="part_total">
+            <p>*Выберете способ оплаты</p>
+            <label for="">
+                <input type="radio" name="oplata" value="50000">
+                Наличная
+            </label>
+            <label for="">
+                <input type="radio" name="oplata" value="250000">
+                Безналичная
+            </label>
+            <label for="">
+                <input type="radio" name="oplata" value="350000">
+                Счет на юр.лицо
+            </label>
+        </fieldset>
+
+        <div class="total" id="total"></div>
+
+        <button class="button" type="submit">Рассчитать</button>
+    </form>
+    <!-- 
+    <div class="page__content">
+        <main class="page__section content">
+            <form class="form" novalidate>
+                <label class="form__field">
+                    Введите ваш URL-адрес:
+                    <input type="url" class="form__input" required minlength="13">
+                </label>
+                <button type="submit" class="button">
+                    Отправить
+                </button>
+            </form>
+        </main>
+    </div> -->
+
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>

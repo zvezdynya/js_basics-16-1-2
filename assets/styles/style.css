@@ -1,0 +1,76 @@
+body {
+    width: 100vw;
+    background: url('/assets/images/backgr2.png') 0 0/cover no-repeat;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 35vw;
+    margin: 30px auto;
+    padding: 30px 10%;
+    border: 2px solid rgba(133, 97, 97, 1);
+    background-color: rgba(132, 113, 113, 0.8);
+}
+
+fieldset {
+    border: 2px solid rgba(133, 97, 97, 1);
+}
+
+h2 {
+    /* background-color: rgba(133, 97, 97, 0.6); */
+    padding: 10px 50px;
+    width: 100%;
+    /* text-align: center; */
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+select {
+    padding: 5px 0;
+    margin: 10px 0;
+    width: 300px;
+    color: rgb(82, 59, 59);
+    text-align: center;
+    background-color:rgba(35, 30, 30, 0.838);
+    color: white;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 20px;
+    margin: 10px 12px;
+
+}
+
+label {
+    margin: 10px 0;
+    width: 60%;
+    color: white;
+}
+
+button {
+    width: 300px;
+    margin: 15px 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(35, 30, 30, 0.838);
+    color: white;
+}
+
+input {
+    margin: 5px;
+}
+
+.owners {
+    display: none;
+}
+
+.part_total {
+    width: 100%;
+}
